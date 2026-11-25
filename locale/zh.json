@@ -1,0 +1,6 @@
+{
+  "meta": {
+    "title": "品牌 Logo 替换",
+    "description": "将 DeepSeek Harness 侧边栏与首页 Logo 替换为其他产品（Codex、Claude、Claude Code、OpenCode、Antigravity、Cursor、OpenAI、Gemini、GitHub Copilot、Windsurf、Cline、Kiro、Trae）、自定义图标/文字，或完全隐藏。可在「插件」中打开本插件详情页，或在「设置 → 通用」中随时切换。关闭插件后自动恢复默认 DeepSeek Harness 品牌标识。"
+  }
+}

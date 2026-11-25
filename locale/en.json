@@ -1,0 +1,6 @@
+{
+  "meta": {
+    "title": "Brand logo switcher",
+    "description": "Replace the DeepSeek Harness sidebar and home hero logo with presets (Codex, Claude, Claude Code, OpenCode, Antigravity, Cursor, OpenAI, Gemini, GitHub Copilot, Windsurf, Cline, Kiro, Trae), a custom SVG/image and title, or hide it completely. Configure it from this plugin's page in Plugins or under Settings > General. Disabling the plugin restores the default DeepSeek Harness branding."
+  }
+}

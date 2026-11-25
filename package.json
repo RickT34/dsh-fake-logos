@@ -1,0 +1,72 @@
+{
+  "name": "dsh-fake-logos",
+  "version": "0.1.0",
+  "type": "module",
+  "description": "Replace the DeepSeek Harness sidebar and home hero logo with other AI coding product logos (Codex, Claude, Claude Code, OpenCode, Antigravity, Cursor, and more), a custom SVG/image/label, or hide it completely.",
+  "license": "MIT",
+  "author": "RickT34",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/RickT34/dsh-fake-logos.git"
+  },
+  "homepage": "https://github.com/RickT34/dsh-fake-logos#readme",
+  "bugs": {
+    "url": "https://github.com/RickT34/dsh-fake-logos/issues"
+  },
+  "keywords": [
+    "deepseek-harness",
+    "dsh",
+    "dsh-plugin",
+    "logo",
+    "branding",
+    "customization",
+    "cordis"
+  ],
+  "publishConfig": {
+    "access": "public"
+  },
+  "main": "./index.js",
+  "exports": {
+    ".": "./index.js",
+    "./client": "./client.js",
+    "./package.json": "./package.json",
+    "./locale/*.json": "./locale/*.json",
+    "./icon": "./icon.svg"
+  },
+  "files": [
+    "index.js",
+    "client.js",
+    "cordis.patch.yml",
+    "locale/*.json",
+    "icon.svg",
+    "README.md",
+    "README.zh.md",
+    "LICENSE",
+    "LICENSE-THIRD-PARTY.md"
+  ],
+  "engines": {
+    "node": ">=20.0.0",
+    "dsh": ">=0.2.2-rc.1 <0.3.0"
+  },
+  "peerDependencies": {
+    "@deepseek-ai/schemastery": "^3.19.0"
+  },
+  "peerDependenciesMeta": {
+    "@deepseek-ai/schemastery": {
+      "optional": true
+    }
+  },
+  "dsh": {
+    "bundle": {
+      "patch": "./cordis.patch.yml"
+    },
+    "client": {
+      "platform": "web",
+      "immediately": true,
+      "inject": [
+        "@deepseek-ai/dsh-client-ui-renderer",
+        "@deepseek-ai/dsh-client-ui-settings"
+      ]
+    }
+  }
+}
